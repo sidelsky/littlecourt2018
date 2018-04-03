@@ -13,17 +13,14 @@
 		<?php wp_head(); ?>
 	</head>
 	
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> >
 
 		<?php
-		//include('dist/svg-sprite.svg');
-			//Include SVG Sprite
-			$svg_sprites = '/dist/svg-sprite.svg';
-			if( file_exists($svg_sprites) ) {
-				include('dist/svg-sprite.svg');
-			} else {
-				echo '<code>WARNING! svg-sprite.svg is missing!</code>';
-			}
+			/**
+			 * Import SVG Sprite
+			 */
+
+			include('dist/svg-sprite.svg');
 		?>
 
 		<div class="page-wrap">
