@@ -7,6 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInitf05e22835dff74e37176fa69aeb36321
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PhilippBaschke\\ACFProInstaller\\' => 31,
+        ),
+        'D' => 
+        array (
+            'Dotenv\\' => 7,
+        ),
         'C' => 
         array (
             'Composer\\Installers\\' => 20,
@@ -14,6 +22,14 @@ class ComposerStaticInitf05e22835dff74e37176fa69aeb36321
     );
 
     public static $prefixDirsPsr4 = array (
+        'PhilippBaschke\\ACFProInstaller\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/philippbaschke/acf-pro-installer/src/ACFProInstaller',
+        ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
