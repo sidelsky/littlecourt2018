@@ -2,9 +2,13 @@
 /*
 !.gitignore
 !wp-content
+!wp-content/mu-plugins
 
 #Ignore these...
 wp-content/themes/littlecourt2018/node_modules
 wp-content/themes/littlecourt2018/yarn-error.log
 wp-content/uploads
+wp-content/plugins
+wp-content/plugins/*
 wp-content/themes/littlecourt2018/.env
+wp-content/themes/littlecourt2018/vendor

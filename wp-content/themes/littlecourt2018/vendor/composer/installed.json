@@ -249,6 +249,50 @@
         ]
     },
     {
+        "name": "wpackagist-plugin/acf-theme-code",
+        "version": "1.3.2",
+        "version_normalized": "1.3.2.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/acf-theme-code/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/acf-theme-code.zip?timestamp=1502953119",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/acf-theme-code/"
+    },
+    {
+        "name": "wpackagist-plugin/admin-menu-editor",
+        "version": "1.8.2",
+        "version_normalized": "1.8.2.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/admin-menu-editor/",
+            "reference": "tags/1.8.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/admin-menu-editor.1.8.2.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/admin-menu-editor/"
+    },
+    {
         "name": "wpackagist-plugin/akismet",
         "version": "dev-trunk",
         "version_normalized": "9999999-dev",
