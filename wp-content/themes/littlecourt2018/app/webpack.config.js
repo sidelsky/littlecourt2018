@@ -90,7 +90,14 @@ module.exports = {
          // svgo options + hash: true to watch
          hash: true,
          svgoOptions: {
-            plugins: [{ removeTitle: true }]
+            plugins: [
+               { removeTitle: false },
+               { removeUselessStrokeAndFill: true },
+               { removeAttrs: { attrs: "fill|class|style" } },
+               { removeStyleElement: true },
+               { removeRasterImages: true },
+               { sortAttr: true }
+            ]
          },
          prefix: "icon" + "-"
       })

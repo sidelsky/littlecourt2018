@@ -4,6 +4,9 @@
 /**
 * Generic
 */
+/**
+* Set lost grid to use Flexbox by default
+*/
 /*
 * Web fonts
 */
@@ -16,7 +19,6 @@
 /**
 * Base
 */
-body {
-  background-color: pink;
-  -webkit-transform: rotate3d(2);
-          transform: rotate3d(2); }
+/**
+* Breakpoint
+*/

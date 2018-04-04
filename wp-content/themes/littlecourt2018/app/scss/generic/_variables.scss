@@ -1,4 +1,7 @@
 // Grid
+$max-page-width: 60rem;    // Absolute maximum width of content
+$page-width: $max-page-width;
+
 $row-width: 120rem !default;
 $max-width: 80%;
 
@@ -22,16 +25,8 @@ $confirm: #02c519;
 $error: $ms-red;
 
 
-
 //Typefaces
 //$arial: 'Arial', sans-serif;
-
-//Global
-//$primary-font: $arial;
-
-//Font faces
-//$font-primary: 'Century Gothic', 'Apple Gothic', '#{$font-name}-regular', Helvetica, Arial, sans-serif;
-//$font-primary--bold: 'Century Gothic', 'Apple Gothic', '#{$font-name}-bold', Helvetica, Arial, sans-serif;
 
 $font-name: 'muli';
 $gothic: 'Century Gothic';
@@ -44,8 +39,11 @@ $primary-font-size: 16px;
 $primary-font-weight: normal;
 $primary-link-color: $black;
 
-//Font faces
-//@include web-font('Nexa', '../fonts/', 'Nexa_Free_Bold-webfont');
+
+/**
+* Set lost grid to use Flexbox by default
+*/
+//@lost flexbox flex;
 
 //Breakpoints
 $small: 540px;
@@ -73,7 +71,7 @@ $spacing--jumbo: 10rem;
 $button-width: 18px;                    // The width of the button area
 $button-height: 18px;                   // The height of the button area
 $bar-thickness: 2px;                    // The thickness of the button bars
-$button-pad: 0;                      // The left/right padding between button area and bars.
+$button-pad: 0;                         // The left/right padding between button area and bars.
 $button-bar-space: 4px;                // The spacing between button bars
 $button-transistion-duration: .3s;     // The transition duration
 
