@@ -1,0 +1,721 @@
+@charset "UTF-8";
+/**
+* Vendors
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+* Generic
+*/
+/* aspect ratio | padding-bottom value
+
+--------------|----------------------
+16:9 | 56.25%
+4:3 | 75%
+3:2 | 66.66%
+8:5 | 62.5%
+@include aspect-ratio(3,2); */
+/**
+* Grid
+*/
+/**
+* Black and white
+*/
+/**
+* Colours
+*/
+/**
+* Colour Palette
+* @useage: palette(primary, base);
+*/
+/**
+* Typefaces
+* @useage: font-family(primary, regular);
+*/
+/**
+* Set lost grid to use Flexbox by default
+*/
+/**
+* To actually call our palettes in our styles,
+* we use a very simple custom Sassfunction to access
+* colours in our palette by name and optional tone/shade:
+*/
+/**
+* Colour palette
+*/
+/**
+* Fonts
+*/
+/**
+* Base
+*/
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin-bottom: 2rem; }
+
+p,
+li {
+  font-size: 1.5rem; }
+  @media (min-width: 376px) {
+    p,
+    li {
+      font-size: 1.5rem; } }
+  @media (min-width: 769px) {
+    p,
+    li {
+      font-size: 1.5rem; } }
+
+h1 {
+  font-size: 3rem; }
+  @media (min-width: 376px) {
+    h1 {
+      font-size: 4rem; } }
+  @media (min-width: 769px) {
+    h1 {
+      font-size: 6rem; } }
+
+h2 {
+  font-size: 2rem; }
+  @media (min-width: 376px) {
+    h2 {
+      font-size: 3rem; } }
+  @media (min-width: 769px) {
+    h2 {
+      font-size: 4rem; } }
+
+h3 {
+  font-size: 2rem; }
+  @media (min-width: 376px) {
+    h3 {
+      font-size: 2.5rem; } }
+  @media (min-width: 769px) {
+    h3 {
+      font-size: 3rem; } }
+
+h4 {
+  font-size: 2rem; }
+  @media (min-width: 376px) {
+    h4 {
+      font-size: 2rem; } }
+  @media (min-width: 769px) {
+    h4 {
+      font-size: 2rem; } }
+
+blockquote {
+  font-size: 2rem;
+  margin: 0; }
+  @media (min-width: 376px) {
+    blockquote {
+      font-size: 2rem; } }
+  @media (min-width: 769px) {
+    blockquote {
+      font-size: 2rem; } }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  min-height: 100%;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  background-color: #f5f3f0;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.33;
+  font-family: "semplicita-regular", Helvetica, Arial, sans-serif; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+* ::-moz-selection {
+  color: #fff;
+  text-shadow: none; }
+
+* ::selection {
+  color: #fff;
+  text-shadow: none; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+img {
+  max-width: 100%; }
+
+ul,
+ol {
+  padding-left: 0; }
+
+hr {
+  border-color: #777777;
+  margin: 4rem 0; }
+
+figure {
+  margin: 0; }
+
+blockquote .quote {
+  quotes: '\201C' '\201D' '\2018' '\2019'; }
+  blockquote .quote::before {
+    content: open-quote; }
+  blockquote .quote::after {
+    content: close-quote; }
+
+.logo {
+  max-width: 2.4rem; }
+
+a {
+  text-decoration: none; }
+
+.row::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+::-moz-selection {
+  background: #cbc9c7; }
+
+::selection {
+  background: #cbc9c7; }
+
+::-moz-selection {
+  background: #827c77; }
+
+.b_svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%; }
+
+.b_icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  pointer-events: none;
+  position: relative;
+  stroke-width: 0;
+  vertical-align: middle;
+  width: 1em; }
+
+/**
+* Fonts
+*/
+/**
+ * @license
+ * MyFonts Webfont Build ID 3551250, 2018-04-04T05:42:26-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: SemplicitaPro-Bold by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/bold/
+ * 
+ * Webfont: SemplicitaPro-Light by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/light/
+ * 
+ * Webfont: SemplicitaPro-BoldItalic by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/bold-italic/
+ * 
+ * Webfont: SemplicitaPro-LtIt by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/light-italic/
+ * 
+ * Webfont: SemplicitaPro-Italic by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/italic/
+ * 
+ * Webfont: SemplicitaPro-MedIt by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/medium-italic/
+ * 
+ * Webfont: SemplicitaPro-Medium by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/medium/
+ * 
+ * Webfont: SemplicitaPro-SemibdIt by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/semibold-italic/
+ * 
+ * Webfont: SemplicitaPro by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/regular/
+ * 
+ * Webfont: SemplicitaPro-Semibold by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/semplicita-pro/semibold/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3551250
+ * Licensed pageviews: 100,000
+ * Webfonts copyright: Copyright &#x00A9; 2011 Canada Type. Designed by Patrick Griffin
+ * &amp; Bill Troop. All rights reserved.
+ * 
+ * © 2018 MyFonts Inc
+*/
+/**
+* Font Families
+*/
+/**
+* $font-regular: normal;
+* $font-thin: 100;
+* $font-light: 200;
+* $font-bold: bold;
+* $font-medium: 500;
+*/
+/**
+* Semplicita regular
+*/
+@font-face {
+  font-family: "semplicita-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url(/wp-content/themes/wordpress-webpack/assets/fonts/semplicita-regular.woff) format("woff");
+  src: url(/wp-content/themes/wordpress-webpack/assets/fonts/semplicita-regular.ttf) format("truetype"); }
+
+/**
+* Semplicita medium
+*/
+@font-face {
+  font-family: "semplicita-medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url(/wp-content/themes/wordpress-webpack/assets/fonts/semplicita-medium.woff) format("woff");
+  src: url(/wp-content/themes/wordpress-webpack/assets/fonts/semplicita-medium.ttf) format("truetype"); }
+
+/**
+* Semplicita semibold
+*/
+@font-face {
+  font-family: "semplicita-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url(/wp-content/themes/wordpress-webpack/assets/fonts/semplicita-semibold.woff) format("woff");
+  src: url(/wp-content/themes/wordpress-webpack/assets/fonts/semplicita-semibold.ttf) format("truetype"); }
+
+/**
+* Modules
+*/
+.m-primary-navigation {
+  font-family: "semplicita-semibold", Helvetica, Arial, sans-serif;
+  color: #7a7470;
+  text-transform: uppercase;
+  display: table-cell;
+  vertical-align: middle; }
+  .m-primary-navigation ul {
+    margin: 0;
+    padding: 6px 0 0 0;
+    text-align: right; }
+  .m-primary-navigation .page_item {
+    font-size: 1.25rem;
+    display: inline-block;
+    padding-left: 6rem;
+    letter-spacing: 0.15rem; }
+    @media (min-width: 376px) {
+      .m-primary-navigation .page_item {
+        font-size: 1.25rem; } }
+    @media (min-width: 769px) {
+      .m-primary-navigation .page_item {
+        font-size: 1.25rem; } }
+    .m-primary-navigation .page_item a {
+      color: currentColor;
+      cursor: pointer; }
+      .m-primary-navigation .page_item a:hover {
+        color: #cbc9c7; }
+  .m-primary-navigation .current_page_item {
+    color: #cbc9c7; }
+
+.m-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex; }
+
+.m-hero {
+  justify-content: center;
+  align-items: center; }
+  .m-hero::before {
+    content: '';
+    display: block;
+    padding-top: 75%;
+    width: 100%; }
+  > .m-hero__canvas {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .m-hero__title-container {
+    z-index: 1;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #668083;
+    text-align: center; }
+    @media (min-width: 376px) {
+      .m-hero__title-container {
+        font-size: 2.4rem; } }
+    @media (min-width: 769px) {
+      .m-hero__title-container {
+        font-size: 3rem; } }
+    @media (min-width: 769px) {
+      .m-hero__title-container {
+        position: relative;
+        position: absolute;
+        width: 60%; }
+        .m-hero__title-container::before {
+          content: '';
+          display: block;
+          padding-top: 57.14286%;
+          width: 100%; }
+        > .m-hero__title-container__canvas {
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0; } }
+  .m-hero__title {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0; }
+    .m-hero__title--top {
+      top: 20%; }
+    .m-hero__title--bottom {
+      bottom: 20%; }
+    @media (min-width: 769px) {
+      .m-hero__title {
+        left: 0;
+        right: 0;
+        position: absolute; }
+        .m-hero__title--top {
+          top: 0; }
+        .m-hero__title--bottom {
+          bottom: 0; } }
+
+.m-page-header {
+  display: table;
+  width: 100%;
+  height: 150px; }
+  .m-page-header__logo-container {
+    width: 80px;
+    display: table-cell;
+    vertical-align: middle; }
+  .m-page-header a {
+    color: currentColor;
+    display: block; }
+  .m-page-header__logo {
+    width: 80px;
+    height: 20px; }
+
+.m-large-copy {
+  padding: 8rem 0;
+  color: #827c77; }
+  .m-large-copy p {
+    font-size: 2.8rem; }
+    @media (min-width: 376px) {
+      .m-large-copy p {
+        font-size: 4.8rem; } }
+    @media (min-width: 769px) {
+      .m-large-copy p {
+        font-size: 7.2rem; } }
+    .m-large-copy p br {
+      display: none;
+      visibility: hidden; }
+  @media (min-width: 376px) {
+    .m-large-copy {
+      padding: 10rem 0; }
+      .m-large-copy br {
+        display: inline;
+        visibility: visible; } }
+  @media (min-width: 1025px) {
+    .m-large-copy {
+      padding-top: 17.6rem; }
+      .m-large-copy p br {
+        display: inline;
+        visibility: visible; } }
+
+.m-video-player {
+  display: flex; }
+
+.m-video-player {
+  justify-content: center;
+  align-items: center; }
+  .m-video-player__content {
+    opacity: 1;
+    outline: solid 1px red;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: ease-out opacity .4s;
+    transition: ease-out opacity .4s; }
+  .m-video-player__poster {
+    opacity: 1;
+    -webkit-transition: ease-out opacity .4s;
+    transition: ease-out opacity .4s;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.isPlaying > .m-video-player__poster,
+.isPlaying > .m-video-player__content {
+  opacity: 0; }
+
+/**
+* Utilities
+*/
+.u-section {
+  width: 100%;
+  outline: solid red 1px; }
+
+.u-row {
+  margin: 0 auto; }
+  .u-row--full-width {
+    max-width: 100%;
+    outline: solid blue 1px; }
+  .u-row--large {
+    max-width: 90%;
+    outline: solid blue 1px; }
+  .u-row--medium {
+    max-width: 1280px;
+    outline: solid purple 1px; }
+  .u-row--small {
+    max-width: 1020px;
+    outline: solid Green 1px; }
+    @media (max-width: 1279px) {
+      .u-row--small {
+        padding-left: 3rem;
+        padding-right: 3rem; } }
+
+/*------------------------------------*    VISIBILITY UTILITIES
+\*------------------------------------*/
+/**
+* Uppercase type
+*/
+.u-text-transform--uppercase {
+  text-transform: uppercase; }
+
+/**
+  * Font weight semibold
+  */
+.font-family--semibold,
+strong {
+  font-family: "semplicita-semibold", Helvetica, Arial, sans-serif; }
+
+/* Screen reader
+ -----------------------------------*/
+.u-sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Centering
+ -----------------------------------*/
+.u-center-block {
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Basic show/hide classes
+ -----------------------------------*/
+.u-hidden {
+  display: none !important; }
+
+.u-show {
+  display: block !important; }
+
+html.hidden {
+  display: block !important; }
+
+/**
+ * Responsive hide-below
+ *
+ * Uses media max-width so will use the value specified in _variables and will hide content
+ * up to that point
+
+ $max-width-small: max-width 540px;
+ $max-width-medium: max-width 768px;
+ $max-width-large: max-width 1024px;
+ $max-width-x-large: max-width 1280px;
+ $max-width-xx-large: max-width 1600px;---------------*/
+/*
+.u-hide-below--small {
+
+    @include breakpoint($max-width-small) {
+        display: none!important;
+    }
+
+}
+.u-hide-below--medium {
+
+    @include breakpoint($max-width-medium) {
+        display: none!important;
+    }
+
+}
+.u-hide-below--large {
+
+    @include breakpoint($max-width-large) {
+        display: none!important;
+    }
+
+}
+.u-hide-below--huge {
+
+    @include breakpoint($max-width-x-large) {
+        display: none!important;
+    }
+
+}
+.u-hide-below--massive {
+
+    @include breakpoint($max-width-xx-large) {
+        display: none!important;
+    }
+
+}
+
+*/
+/**
+ * Responsive hide-above
+ *
+ * Uses media min-width so will use the value specified in _variables and will hide content
+ * from that point and above
+
+ $small: 540px;
+ $medium: 768px;
+ $large: 1024px;
+ $x-large: 1280px;
+ $xx-large: 1600px;
+ -----------------------------------*/
+/*
+.u-hide-above--small {
+
+    @include breakpoint($small) {
+        display: none!important;
+    }
+
+}
+
+.u-hide-above--medium {
+
+    @include breakpoint($medium) {
+        display: none!important;
+    }
+
+}
+
+.u-hide-above--large {
+
+    @include breakpoint($large) {
+        display: none!important;
+    }
+
+}
+
+.u-hide-above--huge {
+
+    @include breakpoint($x-large) {
+        display: none!important;
+    }
+
+}
+
+.u-hide-above--massive {
+
+    @include breakpoint($xx-large) {
+        display: none!important;
+    }
+
+}
+
+*/
+.u-iframe {
+  position: relative; }
+  .u-iframe::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+    width: 100%; }
+  > .u-iframe__canvas {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .u-iframe iframe {
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
